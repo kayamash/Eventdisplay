@@ -22,7 +22,8 @@ void Newrun(int num){
 //  chain->Add("Zmumu_new_Ib0386.root");
 //  chain->Add("Zmumu_MyAOD2.root");
 //  chain->Add("Jpsi_mc16_13TeV.root");
-  chain->Add("/gpfs/fs6001/kayamash/dataset/Jpsi_mc16_13TeV1.root");
+    chain->Add("/gpfs/fs6001/kayamash/dataset/Jpsi_mc16_13TeV1.root");
+  //chain->Add("/gpfs/fs6001/kayamash/dataset/Zmumu300540_hadd.root");
   NewEventDisplay m(chain);
   m.Loop(num);
 }

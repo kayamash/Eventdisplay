@@ -484,9 +484,9 @@ NewEventDisplay::NewEventDisplay(TTree *tree) : fChain(0)
 // if parameter tree is not specified (or zero), connect the file
 // used to generate this class and read the Tree.
    if (tree == 0) {
-      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("Jpsi_default_test.root");
+      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("/gpfs/fs6001/kayamash/dataset/Jpsi_default.root");
       if (!f || !f->IsOpen()) {
-         f = new TFile("Jpsi_default_test.root");
+         f = new TFile("/gpfs/fs6001/kayamash/dataset/Jpsi_default.root");
       }
       f->GetObject("t_tap",tree);
 
