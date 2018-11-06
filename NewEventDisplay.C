@@ -757,7 +757,7 @@ void NewEventDisplay::Loop(int num)
 
                   mdtZ[im] = probe_mesSA_mdtHitZ->at(j)[im];
                   mdtR[im] = probe_mesSA_mdtHitR->at(j)[im];
-                  mdtSpace[im] = probe_mesSA_mdtHitSpace->at(j)[im];
+                  //mdtSpace[im] = probe_mesSA_mdtHitSpace->at(j)[im];
                   mdtSigma[im] = 0;
 //                  mdtSigma[im] = probe_mesSA_mdtHitSigma->at(j)[im];
 
